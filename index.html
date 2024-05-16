@@ -1,0 +1,58 @@
+<!--
+* Curso de Engenharia de Software - UniEVANGÉLICA 
+* Disciplina de Programação Web 
+* Dev: NOME 
+* DATA
+*/ 
+-->
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como Português-Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para garantir que a página seja responsiva -->
+  <title>Cadastro/title> <!-- Título da página que aparece na aba do navegador -->
+  
+  <!-- Importando o CSS do Bootstrap a partir de uma CDN (Content Delivery Network) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <style>
+    /* Customizando o estilo */
+    .formulario-personalizado {
+      padding: 25px; /* Adiciona espaçamento interno (padding) de 25 pixels ao formulário */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5"> <!-- Adiciona um contêiner com margem superior de 5 unidades (mt-5) -->
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3"> <!-- Usando classes de grid do Bootstrap: largura de 6 colunas em telas grandes e desloca a coluna para o centro -->
+      <!-- Formulário com classe personalizada para aplicar o estilo personalizado -->
+      <form class="formulario-personalizado">
+        <!-- Campo para o nome -->
+        <div class="form-group">
+          <label for="nomeUsuario">Nome Completo:</label> <!-- Rótulo para o campo de nome completo -->
+          <input type="text" class="form-control" id="nomeUsuario" placeholder="Informe seu nome completo"> <!-- Campo de entrada de texto para o nome completo -->
+        </div>
+        
+        <!-- Campo para o e-mail -->
+        <div class="form-group">
+          <label for="emailUsuario">Endereço de Email:</label> <!-- Rótulo para o campo de e-mail -->
+          <input type="email" class="form-control" id="emailUsuario" placeholder="Informe seu endereço de email"> <!-- Campo de entrada de e-mail -->
+        </div>
+        
+        <!-- Campo para a senha -->
+        <div class="form-group">
+          <label for="senhaUsuario">Senha de Acesso:</label> <!-- Rótulo para o campo de senha -->
+          <input type="password" class="form-control" id="senhaUsuario" placeholder="Crie uma senha"> <!-- Campo de entrada de senha -->
+        </div>
+        
+        <!-- Botão de submit -->
+        <button type="submit" class="btn btn-success">Registrar</button> <!-- Botão de envio do formulário com a cor de botão sucesso (verde) -->
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
